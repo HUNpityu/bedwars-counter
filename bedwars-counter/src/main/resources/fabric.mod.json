@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "bedwarscounter",
+  "version": "1.0.0",
+  "name": "Bedwars Resource Counter",
+  "description": "Displays iron, gold, diamond and emerald counts in a HUD overlay for Bedwars.",
+  "authors": ["BedwarsCounter"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bedwarscounter/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.bedwarscounter.BedwarsCounterClient"
+    ]
+  },
+  "mixins": [
+    "bedwarscounter.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  }
+}
